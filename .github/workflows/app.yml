@@ -78,7 +78,7 @@ jobs:
           severity: 'CRITICAL'
 
       - name: Push image
-        run: |
+        run: 
           docker image push ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{ env.TAG_APP }}
 
   Deploy:
